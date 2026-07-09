@@ -26,7 +26,7 @@ const projects = [
     tagline: "Snap a meal photo, get itemized calories and macros through a secure serverless pipeline.",
     description:
       "Cross-platform mobile app that converts meal photos into structured macro estimates using a multimodal vision model behind a JSON schema. AI calls run through a Supabase Edge Function proxy with JWT auth, per-user rate limiting, and PostgreSQL row-level security.",
-    image: "/images/fitness-app-project.png",
+    image: `${import.meta.env.BASE_URL}images/fitness-app-project.png`,
     metrics: [
       ["Payload cut", "~95%"],
       ["Upload", "4MB to 150KB"],
@@ -43,7 +43,7 @@ const projects = [
     tagline: "Co-op application portal serving students, coordinators, and employers from one codebase.",
     description:
       "Multi-role web app with three authenticated dashboards and reusable protected routes. Firebase Authentication gates each role, while the coordinator workflow manages searchable applications through a four-state approval pipeline in Firestore.",
-    image: "/images/co-op-portal-project.png",
+    image: `${import.meta.env.BASE_URL}images/co-op-portal-project.png`,
     metrics: [
       ["Roles", "3"],
       ["Pipeline", "4 stages"],
